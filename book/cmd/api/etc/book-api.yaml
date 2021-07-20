@@ -1,0 +1,8 @@
+Name: book-api
+Host: 0.0.0.0
+Port: 7000
+UserRpc:
+  Etcd:
+    Hosts:
+      - 0.0.0.0:2379
+    Key: user.rpc
