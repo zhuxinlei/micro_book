@@ -1,4 +1,4 @@
-module micro_book
+module github.com/zhuxinlei/micro_book
 
 go 1.16
 
