@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"github.com/pkg/errors"
 	"github.com/tal-tech/go-zero/core/logx"
-	"micro_book/book/cmd/api/internal/svc"
-	"micro_book/book/cmd/api/internal/types"
-	"micro_book/book/cmd/model/common"
-	"micro_book/book/cmd/model/input"
+	"github.com/zhuxinlei/micro_book/book/cmd/api/internal/svc"
+	"github.com/zhuxinlei/micro_book/book/cmd/api/internal/types"
+	"github.com/zhuxinlei/micro_book/book/cmd/model/common"
+	"github.com/zhuxinlei/micro_book/book/cmd/model/input"
 )
 
 type BookLogic struct {

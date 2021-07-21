@@ -4,9 +4,9 @@ import (
 	"flag"
 	"fmt"
 
-	"micro_book/book/cmd/testrpc/internal/config"
-	"micro_book/book/cmd/testrpc/internal/handler"
-	"micro_book/book/cmd/testrpc/internal/svc"
+	"github.com/zhuxinlei/micro_book/book/cmd/testrpc/internal/config"
+	"github.com/zhuxinlei/micro_book/book/cmd/testrpc/internal/handler"
+	"github.com/zhuxinlei/micro_book/book/cmd/testrpc/internal/svc"
 
 	"github.com/tal-tech/go-zero/core/conf"
 	"github.com/tal-tech/go-zero/rest"

@@ -4,11 +4,11 @@ import (
 	"context"
 	"fmt"
 	"github.com/pkg/errors"
-	"micro_book/book/cmd/model/common"
-	"micro_book/book/cmd/rpc/bookclient"
+	"github.com/zhuxinlei/micro_book/book/cmd/model/common"
+	"github.com/zhuxinlei/micro_book/book/cmd/rpc/bookclient"
 
-	"micro_book/book/cmd/testrpc/internal/svc"
-	"micro_book/book/cmd/testrpc/internal/types"
+	"github.com/zhuxinlei/micro_book/book/cmd/testrpc/internal/svc"
+	"github.com/zhuxinlei/micro_book/book/cmd/testrpc/internal/types"
 
 	"github.com/tal-tech/go-zero/core/logx"
 )

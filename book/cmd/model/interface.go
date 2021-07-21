@@ -1,8 +1,8 @@
 package model
 
 import (
-	"micro_book/book/cmd/model/input"
-	"micro_book/book/cmd/model/output"
+	"github.com/zhuxinlei/micro_book/book/cmd/model/input"
+	"github.com/zhuxinlei/micro_book/book/cmd/model/output"
 )
 
 type Book interface {

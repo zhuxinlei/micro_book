@@ -4,7 +4,7 @@ package handler
 import (
 	"net/http"
 
-	"micro_book/book/cmd/testrpc/internal/svc"
+	"github.com/zhuxinlei/micro_book/book/cmd/testrpc/internal/svc"
 
 	"github.com/tal-tech/go-zero/rest"
 )

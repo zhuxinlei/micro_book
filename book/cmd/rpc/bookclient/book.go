@@ -8,7 +8,7 @@ package bookclient
 import (
 	"context"
 
-	"micro_book/book/cmd/rpc/book"
+	"github.com/zhuxinlei/micro_book/book/cmd/rpc/book"
 
 	"github.com/tal-tech/go-zero/zrpc"
 )

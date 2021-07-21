@@ -1,9 +1,9 @@
 package handler
 
 import (
-	"micro_book/book/cmd/api/internal/logic"
-	"micro_book/book/cmd/api/internal/svc"
-	"micro_book/book/cmd/api/internal/types"
+	"github.com/zhuxinlei/micro_book/book/cmd/api/internal/logic"
+	"github.com/zhuxinlei/micro_book/book/cmd/api/internal/svc"
+	"github.com/zhuxinlei/micro_book/book/cmd/api/internal/types"
 	"net/http"
 
 	"github.com/tal-tech/go-zero/rest/httpx"

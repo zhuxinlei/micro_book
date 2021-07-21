@@ -2,8 +2,8 @@ package logic
 
 import (
 	"context"
-	"micro_book/book/cmd/api/internal/svc"
-	"micro_book/book/cmd/api/internal/types"
+	"github.com/zhuxinlei/micro_book/book/cmd/api/internal/svc"
+	"github.com/zhuxinlei/micro_book/book/cmd/api/internal/types"
 
 	"github.com/tal-tech/go-zero/core/logx"
 )

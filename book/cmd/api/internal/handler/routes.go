@@ -3,7 +3,7 @@ package handler
 
 import (
 	"github.com/tal-tech/go-zero/rest"
-	"micro_book/book/cmd/api/internal/svc"
+	"github.com/zhuxinlei/micro_book/book/cmd/api/internal/svc"
 	"net/http"
 )
 

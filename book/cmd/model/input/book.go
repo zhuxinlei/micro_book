@@ -3,7 +3,7 @@ package input
 import (
 	"github.com/jinzhu/gorm"
 	"github.com/shopspring/decimal"
-	"micro_book/book/cmd/model/output"
+	"github.com/zhuxinlei/micro_book/book/cmd/model/output"
 	"time"
 )
 

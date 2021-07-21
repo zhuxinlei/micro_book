@@ -4,8 +4,8 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
 	"github.com/tal-tech/go-zero/core/logx"
-	"micro_book/book/cmd/model/table"
-	"micro_book/book/cmd/rpc/internal/config"
+	"github.com/zhuxinlei/micro_book/book/cmd/model/table"
+	"github.com/zhuxinlei/micro_book/book/cmd/rpc/internal/config"
 )
 
 type ServiceContext struct {

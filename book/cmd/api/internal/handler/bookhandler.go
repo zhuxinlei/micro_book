@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/tal-tech/go-zero/rest/httpx"
-	"micro_book/book/cmd/api/internal/logic"
-	"micro_book/book/cmd/api/internal/svc"
-	"micro_book/book/cmd/api/internal/types"
-	"micro_book/book/cmd/model/common"
+	"github.com/zhuxinlei/micro_book/book/cmd/api/internal/logic"
+	"github.com/zhuxinlei/micro_book/book/cmd/api/internal/svc"
+	"github.com/zhuxinlei/micro_book/book/cmd/api/internal/types"
+	"github.com/zhuxinlei/micro_book/book/cmd/model/common"
 	"net/http"
 )
 

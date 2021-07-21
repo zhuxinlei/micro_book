@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"github.com/tal-tech/go-zero/core/conf"
 	"github.com/tal-tech/go-zero/rest"
-	"micro_book/book/cmd/api/internal/config"
-	"micro_book/book/cmd/api/internal/handler"
-	"micro_book/book/cmd/api/internal/svc"
+	"github.com/zhuxinlei/micro_book/book/cmd/api/internal/config"
+	"github.com/zhuxinlei/micro_book/book/cmd/api/internal/handler"
+	"github.com/zhuxinlei/micro_book/book/cmd/api/internal/svc"
 )
 
 var configFile = flag.String("f", "etc/book-api.yaml", "the config file")

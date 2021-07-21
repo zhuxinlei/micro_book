@@ -3,8 +3,8 @@ package logic
 import (
 	"context"
 
-	"micro_book/book/cmd/testrpc/internal/svc"
-	"micro_book/book/cmd/testrpc/internal/types"
+	"github.com/zhuxinlei/micro_book/book/cmd/testrpc/internal/svc"
+	"github.com/zhuxinlei/micro_book/book/cmd/testrpc/internal/types"
 
 	"github.com/tal-tech/go-zero/core/logx"
 )

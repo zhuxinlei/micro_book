@@ -2,8 +2,8 @@ package table
 
 import (
 	"github.com/jinzhu/gorm"
-	"micro_book/book/cmd/model/input"
-	"micro_book/book/cmd/model/output"
+	"github.com/zhuxinlei/micro_book/book/cmd/model/input"
+	"github.com/zhuxinlei/micro_book/book/cmd/model/output"
 )
 
 type BookModel struct {

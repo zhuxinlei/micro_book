@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	"github.com/pkg/errors"
-	"micro_book/book/cmd/model/common"
-	"micro_book/book/cmd/model/input"
-	"micro_book/book/cmd/rpc/book"
-	"micro_book/book/cmd/rpc/internal/svc"
+	"github.com/zhuxinlei/micro_book/book/cmd/model/common"
+	"github.com/zhuxinlei/micro_book/book/cmd/model/input"
+	"github.com/zhuxinlei/micro_book/book/cmd/rpc/book"
+	"github.com/zhuxinlei/micro_book/book/cmd/rpc/internal/svc"
 
 	"github.com/tal-tech/go-zero/core/logx"
 )

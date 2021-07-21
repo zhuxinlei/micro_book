@@ -2,8 +2,8 @@ package svc
 
 import (
 	"github.com/tal-tech/go-zero/zrpc"
-	"micro_book/book/cmd/rpc/bookclient"
-	"micro_book/book/cmd/testrpc/internal/config"
+	"github.com/zhuxinlei/micro_book/book/cmd/rpc/bookclient"
+	"github.com/zhuxinlei/micro_book/book/cmd/testrpc/internal/config"
 )
 
 type ServiceContext struct {
