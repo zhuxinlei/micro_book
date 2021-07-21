@@ -1,0 +1,10 @@
+Name: testbook-api
+Host: 0.0.0.0
+Port: 7300
+
+
+BookRpc:
+  Etcd:
+    Hosts:
+      - 0.0.0.0:2379
+    Key: book.rpc

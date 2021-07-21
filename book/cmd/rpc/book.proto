@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package book;
+
+message IdReq{
+    int64 id = 1;
+
+}
+
+message BookInfoReply {
+    int64 id = 1;
+    string book_name = 2;
+    double price = 3;
+    string author = 4;
+    int64 publish_time=5;
+    string desc = 6;
+}
+
+service book {
+    rpc getBook(IdReq) returns(BookInfoReply);
+    rpc test(IdReq) returns (BookInfoReply);
+  }
+
