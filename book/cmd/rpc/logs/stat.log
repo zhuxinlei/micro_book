@@ -475,3 +475,6 @@
 {"@timestamp":"2021-07-24T17:19:46.639+08","level":"stat","content":"CPU: 0m, MEMORY: Alloc=2.4Mi, TotalAlloc=10.1Mi, Sys=71.7Mi, NumGC=47"}
 {"@timestamp":"2021-07-24T17:19:46.643+08","level":"stat","content":"(rpc) shedding_stat [1m], cpu: 0, total: 0, pass: 0, drop: 0"}
 {"@timestamp":"2021-07-24T17:19:50.753+08","level":"stat","content":"(book.rpc) - qps: 0.0/s, drops: 0, avg time: 0.0ms, med: 0.0ms, 90th: 0.0ms, 99th: 0.0ms, 99.9th: 0.0ms"}
+{"@timestamp":"2021-07-24T17:20:46.643+08","level":"stat","content":"(rpc) shedding_stat [1m], cpu: 0, total: 1, pass: 1, drop: 0"}
+{"@timestamp":"2021-07-24T17:20:46.643+08","level":"stat","content":"CPU: 0m, MEMORY: Alloc=2.4Mi, TotalAlloc=10.2Mi, Sys=71.7Mi, NumGC=48"}
+{"@timestamp":"2021-07-24T17:20:50.750+08","level":"stat","content":"(book.rpc) - qps: 0.0/s, drops: 0, avg time: 1.0ms, med: 1.0ms, 90th: 1.0ms, 99th: 1.0ms, 99.9th: 1.0ms"}

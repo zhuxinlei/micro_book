@@ -1,2 +1,2 @@
 go.mod
-./book/cmd/rpc/logs/
+./book/cmd/rpc/logs/*
