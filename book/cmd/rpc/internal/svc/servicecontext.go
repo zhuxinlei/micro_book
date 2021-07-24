@@ -4,13 +4,14 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
 	"github.com/tal-tech/go-zero/core/logx"
+	"github.com/zhuxinlei/micro_book/book/cmd/model"
 	"github.com/zhuxinlei/micro_book/book/cmd/model/table"
 	"github.com/zhuxinlei/micro_book/book/cmd/rpc/internal/config"
 )
 
 type ServiceContext struct {
 	Config config.Config
-	Book   table.BookModel
+	Book   model.Book
 }
 
 func NewServiceContext(c config.Config) *ServiceContext {

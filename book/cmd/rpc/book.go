@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"github.com/tal-tech/go-zero/core/logx"
 
 	"github.com/zhuxinlei/micro_book/book/cmd/rpc/book"
 	"github.com/zhuxinlei/micro_book/book/cmd/rpc/internal/config"
@@ -17,6 +18,17 @@ import (
 var configFile = flag.String("f", "etc/book.yaml", "the config file")
 
 func main() {
+	cc := logx.LogConf{
+		ServiceName:         "book.rpc",
+		Mode:                "file",
+		TimeFormat:          "",
+		Path:                "logs",
+		Level:               "",
+		Compress:            false,
+		KeepDays:            0,
+		StackCooldownMillis: 0,
+	}
+	logx.MustSetup(cc)
 	flag.Parse()
 
 	var c config.Config

@@ -40,13 +40,13 @@ func (l *GetBookLogic) GetBook(in *book.IdReq) (*book.BookInfoReply, error) {
 	if err != nil {
 		return nil, errors.Wrapf(common.GetBookError, common.ErrCodeMap[common.GetBookErrorCode])
 	}
-	price, _ := res.Price.Float64()
+
 	return &book.BookInfoReply{
-		Id:                   int64(res.Id),
+		Id:                   res.Id,
 		BookName:             res.BookName,
-		Price:                price,
+		Price:                res.Price,
 		Author:               res.Author,
-		PublishTime:          res.PublishTime.Unix(),
+		PublishTime:          res.PublishTime,
 		Desc:                 res.Desc,
 		XXX_NoUnkeyedLiteral: struct{}{},
 		XXX_unrecognized:     nil,

@@ -30,3 +30,8 @@ func (s *BookServer) Test(ctx context.Context, in *book.IdReq) (*book.BookInfoRe
 	l := logic.NewTestLogic(ctx, s.svcCtx)
 	return l.Test(in)
 }
+
+func (s *BookServer) GetBooks(ctx context.Context, in *book.IdsReq) (*book.BookInfosReply, error) {
+	l := logic.NewGetBooksLogic(ctx, s.svcCtx)
+	return l.GetBooks(in)
+}

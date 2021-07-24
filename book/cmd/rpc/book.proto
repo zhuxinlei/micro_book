@@ -4,7 +4,6 @@ package book;
 
 message IdReq{
     int64 id = 1;
-
 }
 
 message BookInfoReply {
@@ -15,9 +14,20 @@ message BookInfoReply {
     int64 publish_time=5;
     string desc = 6;
 }
+message IdsReq{
+    string ids = 1;
+}
+
+message BookInfosReply{
+    int64 code = 1;
+    string message = 2;
+
+    repeated  BookInfoReply data= 3;
+}
 
 service book {
     rpc getBook(IdReq) returns(BookInfoReply);
     rpc test(IdReq) returns (BookInfoReply);
-  }
+    rpc GetBooks(IdsReq) returns(BookInfosReply);
+}
 

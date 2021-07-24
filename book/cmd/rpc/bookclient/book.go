@@ -14,12 +14,15 @@ import (
 )
 
 type (
-	IdReq         = book.IdReq
-	BookInfoReply = book.BookInfoReply
+	IdReq          = book.IdReq
+	BookInfoReply  = book.BookInfoReply
+	IdsReq         = book.IdsReq
+	BookInfosReply = book.BookInfosReply
 
 	Book interface {
 		GetBook(ctx context.Context, in *IdReq) (*BookInfoReply, error)
 		Test(ctx context.Context, in *IdReq) (*BookInfoReply, error)
+		GetBooks(ctx context.Context, in *IdsReq) (*BookInfosReply, error)
 	}
 
 	defaultBook struct {
@@ -41,4 +44,9 @@ func (m *defaultBook) GetBook(ctx context.Context, in *IdReq) (*BookInfoReply, e
 func (m *defaultBook) Test(ctx context.Context, in *IdReq) (*BookInfoReply, error) {
 	client := book.NewBookClient(m.cli.Conn())
 	return client.Test(ctx, in)
+}
+
+func (m *defaultBook) GetBooks(ctx context.Context, in *IdsReq) (*BookInfosReply, error) {
+	client := book.NewBookClient(m.cli.Conn())
+	return client.GetBooks(ctx, in)
 }

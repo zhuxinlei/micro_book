@@ -10,7 +10,9 @@ type Reply struct {
 type SearchBookReq struct {
 	BookID int64 `json:"book_id"`
 }
-
+type SearchBooksReq struct {
+	BookIDs string `json:"book_ids"`
+}
 type SearchUserReq struct {
 	UserName string `json:"user_name"`
 }

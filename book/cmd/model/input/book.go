@@ -3,7 +3,7 @@ package input
 import (
 	"github.com/jinzhu/gorm"
 	"github.com/shopspring/decimal"
-	"github.com/zhuxinlei/micro_book/book/cmd/model/output"
+	"github.com/zhuxinlei/micro_book/book/cmd/rpc/book"
 	"time"
 )
 
@@ -16,15 +16,16 @@ type Book struct {
 	Desc        string          `json:"desc"`
 }
 
-func (b *Book) ToOutput() output.Book {
+func (b *Book) ToOutput() *book.BookInfoReply {
 
-	return output.Book{
-		Id:          b.ID,
-		CreateAt:    b.CreatedAt.Unix(),
+	price, _ := b.Price.Float64()
+	return &book.BookInfoReply{
+		Id:          int64(b.ID),
 		BookName:    b.BookName,
-		Price:       b.Price,
+		Price:       price,
 		Author:      b.Author,
-		PublishTime: b.PublishTime,
+		PublishTime: b.PublishTime.Unix(),
 		Desc:        b.Desc,
 	}
+
 }

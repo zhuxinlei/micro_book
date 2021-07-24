@@ -19,7 +19,15 @@ func RegisterHandlers(engine *rest.Server, serverCtx *svc.ServiceContext) {
 			},
 		},
 	)
-
+	engine.AddRoutes(
+		[]rest.Route{
+			{
+				Method:  http.MethodGet,
+				Path:    "/search/books",
+				Handler: search_booksHandler(serverCtx),
+			},
+		},
+	)
 	engine.AddRoutes(
 		[]rest.Route{
 			{

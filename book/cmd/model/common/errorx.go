@@ -6,7 +6,9 @@ type ServerErrorxCode int
 // 全局的 错误号 的具体定义
 const (
 	InsertBookErrorCode = 2000 //插入book出错
-	GetBookErrorCode    = 2001 //获取用户信息出错
+	GetBookErrorCode    = 2001 //获取book信息出错
+	GetBooksErrorCode    = 2002 //批量获取book信息出错
+
 )
 
 // 内部的错误map，用来对应 错误号和错误信息
@@ -14,6 +16,7 @@ var ErrCodeMap = map[ServerErrorxCode]string{
 
 	InsertBookErrorCode: "insert into Books error",
 	GetBookErrorCode:    "get Book info error",
+	GetBooksErrorCode:    "get Book infos error",
 }
 
 // Sentinel Error： 即全局定义的Static错误变量
@@ -21,6 +24,7 @@ var ErrCodeMap = map[ServerErrorxCode]string{
 var (
 	InsertBookError = NewServerErrorx(InsertBookErrorCode)
 	GetBookError = NewServerErrorx(GetBookErrorCode)
+	GetBooksError = NewServerErrorx(GetBooksErrorCode)
 )
 
 func NewServerErrorx(code ServerErrorxCode) *ServerErrorx {

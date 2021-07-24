@@ -1,0 +1,5 @@
+{"@timestamp":"2021-07-24T12:53:06.993+08","level":"info","duration":"1.9ms","content":"127.0.0.1:65230 - /book.book/GetBooks - {\"ids\":\"1,2\"}","trace":"7924c01fc5ab46bc","span":"0.1"}
+{"@timestamp":"2021-07-24T15:39:52.536+08","level":"info","duration":"0.9ms","content":"127.0.0.1:50979 - /book.book/GetBooks - {\"ids\":\"1,2\"}","trace":"903af4d111a6b533","span":"0.1"}
+{"@timestamp":"2021-07-24T15:40:04.165+08","level":"info","duration":"0.8ms","content":"127.0.0.1:50979 - /book.book/GetBooks - {\"ids\":\"1\"}","trace":"8e3f7c2cb035f0ab","span":"0.1"}
+{"@timestamp":"2021-07-24T15:45:50.753+08","level":"info","duration":"1.7ms","content":"127.0.0.1:51214 - /book.book/GetBooks - {\"ids\":\"1\"}","trace":"5921947d8a3c9570","span":"0.1"}
+{"@timestamp":"2021-07-24T15:46:03.103+08","level":"info","duration":"1.1ms","content":"127.0.0.1:51214 - /book.book/GetBooks - {\"ids\":\"1,2\"}","trace":"ff772473a4b4a85a","span":"0.1"}
